@@ -1,6 +1,6 @@
 {
   "name": "@-amazeelabs/silverback-cli",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "main": "index.js",
   "scripts": {
     "test": "./test"
@@ -12,5 +12,5 @@
     "repository": "git@github.com:AmazeeLabs/silverback-cli.git",
     "branch": "master"
   },
-  "gitHead": "7d443ea36429f77b952edc933920418d44de2dc9"
+  "gitHead": "75a938cd306967dbb023a3b688faace96abdc53b"
 }

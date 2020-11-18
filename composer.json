@@ -31,5 +31,5 @@
     }
   },
   "composer-exit-on-patch-failure": true,
-  "version": "1.0.11"
+  "version": "1.0.12"
 }

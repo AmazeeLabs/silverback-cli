@@ -52,6 +52,19 @@ EOD
       return 1;
     }
 
+    if (!getenv('SB_ADMIN_USER') || !getenv('SB_ADMIN_PASS')) {
+      $missing[] = getenv('SB_ADMIN_USER') ? '' : 'SB_ADMIN_USER';
+      $missing[] = getenv('SB_ADMIN_PASS') ? '' : 'SB_ADMIN_PASS';
+      $missing = implode(',', $missing);
+      $formatter = $this->getHelper('formatter');
+      $errorMessages = ['Error!', "Some environment variables ({$missing}) are missing."];
+      $formattedBlock = $formatter->formatBlock($errorMessages, 'error');
+      $output->writeln($formattedBlock);
+      $output->writeln('<comment>Please consult the Silverback CLI documentation:</> <href=https://github.com/AmazeeLabs/silverback-cli>https://github.com/AmazeeLabs/silverback-cli</>');
+      $output->writeln('<comment>Local environment variable example:</> ./assets/.env.local.example');
+      return 1;
+    }
+
     $installFromCache = $zipCacheExists && !$profile;
     $configExists = $this->fileSystem->exists('config/sync/core.extension.yml');
 

@@ -1,6 +1,6 @@
 {
   "name": "@-amazeelabs/silverback-cli",
-  "version": "2.7.8",
+  "version": "2.7.9",
   "main": "index.js",
   "scripts": {
     "version": "sync-composer-version",
@@ -16,5 +16,5 @@
     "repository": "git@github.com:AmazeeLabs/silverback-cli.git",
     "branch": "master"
   },
-  "gitHead": "168a5890943623850cc44d4253ade1b41373e577"
+  "gitHead": "52803d3e0c58a7eb356857065e5bc4fcaf3b36c7"
 }

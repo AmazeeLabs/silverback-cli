@@ -3,11 +3,11 @@
   "description": "Scaffolder for Amazee Silverback projects.",
   "type": "package",
   "license": "GPL-2.0-or-later",
-  "version": "2.7.8",
+  "version": "2.7.9",
   "require": {
     "ext-zip": "*",
     "alchemy/zippy": "^1.0.0",
-    "drush/drush": ">=11.0.1",
+    "drush/drush": ">=10",
     "vlucas/phpdotenv": "^5.4",
     "ext-json": "*"
   },

@@ -1,13 +1,13 @@
 {
   "name": "@-amazeelabs/silverback-cli",
-  "version": "2.9.10",
+  "version": "2.9.11",
   "main": "index.js",
   "scripts": {
     "version": "sync-composer-version",
     "test:integration": "./test"
   },
   "devDependencies": {
-    "@amazeelabs/sync-composer-version": "1.1.3"
+    "@amazeelabs/sync-composer-version": "1.1.4"
   },
   "author": "",
   "publishConfig": {
@@ -16,5 +16,5 @@
     "repository": "git@github.com:AmazeeLabs/silverback-cli.git",
     "branch": "master"
   },
-  "gitHead": "412ee354c95e6bc00c0539f2fd57a3ba40c3aca3"
+  "gitHead": "4627ea2564cc56c1018e64ad4977a11d173c687d"
 }

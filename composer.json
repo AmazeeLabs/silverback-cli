@@ -3,7 +3,7 @@
   "description": "Scaffolder for Amazee Silverback projects.",
   "type": "package",
   "license": "GPL-2.0-or-later",
-  "version": "2.9.14",
+  "version": "2.10.0",
   "require": {
     "nelexa/zip": "^4.0.2",
     "drush/drush": "^10 || ^11 || ^12 || ^13",
@@ -24,7 +24,10 @@
     "drupal-scaffold": {
       "file-mapping": {
         "[project-root]/.env.local.example": "assets/.env.local.example",
-        "[project-root]/.envrc": "assets/.envrc",
+        "[project-root]/.envrc": {
+          "path": "assets/.envrc",
+          "override": false
+        },
         "[project-root]/.gitignore": {
           "append": "assets/.gitignore.append.txt",
           "force-append": true
